@@ -1,0 +1,39 @@
+Pour vous connecter la première fois en tant qu'administrateur, utilisez le nom de connection "admin" et le mot de passe "azerty". N'oubliez pas de changer le mot de passe !    
+http://localhost:81/gepi/utilisateurs/mon_compte.php
+secure/connect.inc.php
+
+admin/Eloundou2015!
+scolar: s.ntjosep/ntjosep2016!
+p.nflorian/nflorian2016!	WHAnCy75
+p.knglwadys/knglwadys2016!	OZBmeu96	
+p.wlili/wlili2016!	CbORzM52
+p.memmanuel/memmanuel2016!		WPzZib84
+p.pbmarie/pbmarie2016!	zvntgc82
+p.tmbernard/tmbernard2016!	lMcYsB78
+p.nnjoseph/nnjoseph2016!	biunfw40
+sgnjoseph/sgnjoseph2016!	mOGFKR20
+s.ntjosep/ntjosep2016!	cBCxrP95
+p.wlili/p.wlili2016!	prgPNA36
+Pwvincent/Pwvincent2016!	hGhEmK95
+p.tnicephor/p.tnicephor2016!	XEDwuX90
+p.ppatrice/p.ppatrice2016!	cfBVYh63
+p.yzacharie/p.yzacharie2016!	eeeWDT43
+p.stsing/p.stsing2016!	CvTsNA68
+p.hhenri/	gAaEqM95	
+p.ialeo/p.ialeo2016!	onzFEw51
+p.aanaza/p.aanaza2016!	HBpchw81
+p.ejmarie/p.ejmarie2016!	pDrfZZ28
+p.firene/p.firene2016!	OnZbmz29
+
+
+
+
+pojulienne/pojulienne2016!	POSLfA93
+
+La table 'modele_bulletin' n'existe pas.
+
+-------------- FONCTION DE MANAPULLATION DES BULLETIN
+bulletin/bull_func.lib.php
+
+================== MODIF ===============
+PARAM DU BULLETIN METTRE "Largeur du bloc matière" à 100

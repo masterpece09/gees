@@ -1,0 +1,50 @@
+USE geesado
+DELIMITER //
+
+-- A EXECUTER AVANT L'EXPORTATION
+DROP PROCEDURE IF EXISTS eleves_update;
+CREATE PROCEDURE eleves_update ()
+   BEGIN
+	DECLARE num_eleve int DEFAULT 0;   
+	DECLARE  id_eleve, chaine  VARCHAR(255);
+	DECLARE done int DEFAULT 0;
+	DECLARE curseur CURSOR FOR SELECT ele_id FROM eleves WHERE 1;
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+	OPEN curseur;
+	REPEAT
+		FETCH curseur INTO id_eleve;
+		IF NOT done THEN
+			SET num_eleve = num_eleve + 1;
+			-- NN: National Number 
+			-- SN: Shool Number
+			UPDATE eleves SET no_gep = CONCAT('NN',num_eleve)  , elenoet  = CONCAT('SN',num_eleve) WHERE ele_id = id_eleve;
+		END IF;
+	UNTIL done END REPEAT;
+   END//
+
+CALL eleves_update;
+
+DROP PROCEDURE IF EXISTS eleves_update;
+
+-- A EXCUTER APRES IMPORTATION DES ENSEIGNANT
+DROP PROCEDURE IF EXISTS enseignant_update;
+CREATE PROCEDURE enseignant_update ()
+   BEGIN
+	DECLARE num_eleve int DEFAULT 0;   
+	DECLARE  nom1, prenom1, login1  VARCHAR(255);
+	DECLARE done int DEFAULT 0;
+	DECLARE curseur CURSOR FOR SELECT login, nom, prenom FROM utilisateurs WHERE 1;
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '02000' SET done = 1;
+	OPEN curseur;
+	REPEAT
+		FETCH curseur INTO login1, nom1, prenom1;
+		IF NOT done THEN
+			UPDATE gees.utilisateurs SET login = login1 WHERE nom = nom1 AND prenom = prenom1;
+		END IF;
+	UNTIL done END REPEAT;
+   END//
+
+CALL enseignant_update;
+
+DROP PROCEDURE IF EXISTS enseignant_update;
+

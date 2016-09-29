@@ -1,0 +1,7 @@
+1- /home/pece/www/geeseg/lib/simplesaml/modules/gepimodule/themes/gepitheme/default/includes/footer.php
+2- /home/pece/www/geeseg/recover_password.php
+3- /home/pece/www/geeseg/templates/origine/login_template.html
+4- /home/pece/www/gees/gestion/info_vie_privee.php
+
+
+5- grep -rl Gees . | xargs sed -i 's/Gees/Gees/g'

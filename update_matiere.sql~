@@ -1,0 +1,53 @@
+UPDATE cn_conteneurs SET `nom_court` = "littérature", `nom_complet` = "littérature" WHERE `nom_court` = "littetrature"
+
+UPDATE groupes SET `name` = "littérature", `description` = "littérature" WHERE `name` = "littetrature" 
+
+UPDATE cn_conteneurs SET `nom_court` = "Dessin Technique", `nom_complet` = "Dessin Technique" WHERE `nom_court` = "DessinTechnique";
+
+UPDATE groupes SET `name` = "Dessin Technique", `description` = "Dessin Technique" WHERE `name` = "DessinTechnique" ;
+
+
+UPDATE cn_conteneurs SET `nom_court` = "Langue Francaise", `nom_complet` = "Langue Francaise" WHERE `nom_court` = "LangueFrancaise" OR `nom_complet` = "LangueFrancaise" ;
+
+UPDATE groupes SET `name` = "Langue Francaise", `description` = "Langue Francaise" WHERE `name` = "LangueFrancaise" OR `description` = "LangueFrancaise";
+
+UPDATE j_professeurs_matieres SET `id_matiere` = "Langue Francaise" WHERE `id_matiere` = "LangueFrancaise";
+
+UPDATE `j_groupes_matieres` SET `id_matiere`="Langue Francaise" WHERE `id_matiere`="LangueFrancaise";
+
+UPDATE `matieres` SET `matiere`="Langue Francaise", `nom_complet`="Langue Francaise" WHERE `matiere`="LangueFrancaise" OR `nom_complet` ="LangueFrancaise";
+
+
+
+
+
+
+
+UPDATE cn_conteneurs SET `nom_court` = "Histoire du Costume", `nom_complet` = "Histoire du Costume" WHERE `nom_court` = "HistoireCoutume" OR `nom_complet` = "HistoireCoutume" ;
+
+UPDATE groupes SET `name` = "Histoire du Costume", `description` = "Histoire du Costume" WHERE `name` = "HistoireCoutume" OR `description` = "HistoireCoutume";
+
+UPDATE `matieres` SET `matiere`="Histoire du Costume", `nom_complet`="Histoire du Costume" WHERE `matiere`="HistoireCoutume" OR `nom_complet` ="HistoireCoutume";
+
+UPDATE j_professeurs_matieres SET `id_matiere` = "Histoire du Costume" WHERE `id_matiere` = "HistoireCoutume";
+
+UPDATE `j_groupes_matieres` SET `id_matiere`="Histoire du Costume" WHERE `id_matiere`="HistoireCoutume";
+
+===========================================================================
+UPDATE cn_conteneurs SET `nom_court` = "Catechese", `nom_complet` = "Catechese" WHERE `nom_court` = "CATE" OR `nom_complet` = "CATE" ;
+
+UPDATE groupes SET `name` = "Catechese", `description` = "Catechese" WHERE `name` = "CATE" OR `description` = "CATE";
+
+UPDATE `matieres` SET `matiere`="Catechese", `nom_complet`="Catechese" WHERE `matiere`="CATE" OR `nom_complet` ="CATE";
+
+
+
+UPDATE cn_conteneurs SET `nom_court` = "Catechese", `nom_complet` = "Catechese" WHERE `nom_court` = "Catéchèse" OR `nom_complet` = "Catéchèse" ;
+
+UPDATE groupes SET `name` = "Catechese", `description` = "Catechese" WHERE `name` = "CATECHESE" OR `description` = "CATECHESE";
+
+UPDATE `matieres` SET `matiere`="Catéchèse", `nom_complet`="Catéchèse" WHERE `matiere`="CATECHESE" OR `nom_complet` ="CATECHESE";
+
+UPDATE j_professeurs_matieres SET `id_matiere` = "CATECHESE" WHERE `id_matiere` = "Cathechèse";
+
+UPDATE `j_groupes_matieres` SET `id_matiere`="CATECHESE" WHERE `id_matiere`="Cathechèse";

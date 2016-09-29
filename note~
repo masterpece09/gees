@@ -1,0 +1,19 @@
+$tab_bull['total_coef_eleve'][$i] 5078
+$tab_bull['coef_eleve'][$i][$m] 
+
+$note_coeficie1 = 0;
+$note_coeficie2 = 0;
+
+// FIN AFFICHAGE ELEVE 4817
+
+// Ligne moyenne générale 5043
+
+ //Affichage des moyennes des séquences 5066
+
+
+
+echo "classe = ".$currentClasse.' course = '.$currentCourse.' periode = '.$currentPeriode."<br/>";
+
+==================================== ELEM CRETION ELEVE =====================
+Identifiant National: Identifiant de l'élève dans le pay
+Elenoet: Identifiant élève dans la classe
